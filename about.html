@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Meet the Team</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png" />
+    <style>
+      button{
+        box-shadow: 0px 0px 10px 0px rgba(15, 15, 15, 0.8);
+      }
+      /* Parent container */
+      .gifContainer {
+            position: relative;
+        }
+        .gifAbout {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class ="aboutBody">
+
+  <!-- TODO if have time: Nav Bar that moves from top for desktop to side hamburger menu for mobile -->
+  <!-- Maybe add in a logo into navBar if have time -->
+ <!-- <a class ="webLogo" href="index.html"><img src="../images/riverLogo.png" alt="Website Logo"></a> -->
+
+ <!-- Nav Bar Starts -->
+  <div class ="navBar">
+    <a href="./index.html">Home</a>
+    <a class ="active" href ="./about.html">About</a>
+    <a href ="./contact.html">Contact</a>
+    <div class ="login-container">
+      <form action ="./error.html">
+        <input type ="text" placeholder="Username" name="username">
+        <input type ="text" placeholder="Password" name="password">
+        <button type ="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <!-- Nav Bar Ends -->
+  <!-- Alert Message just for fun -->
+  <div class="alertBox">
+    <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
+    Super important alert banner here. It's monday.
+  </div>
+  <!-- Header Starts -->
+
+  <div class="about-section">
+      <h1>About Us</h1>
+      <p>Two psychologists and an engineer walk in to a bar...</p>
+      <p>...One said, "Ouch!"</p>
+  </div>
+
+  <!-- Header Ends -->
+
+  <!-- Section Starts -->
+  <section>
+      
+  <h2 style="text-align:center; color: white">~ Meet the Team ~</h2>
+  <div class="row">
+      <div class="column">
+        <div style="border-radius: 30px;" class="card">
+          <img src="../images/briePic.png" alt="Brie Everard" style="width:100%; box-shadow: 0px 0px 50px 0px rgba(15, 15, 15, 0.8);">
+          <div class="container">
+              <h2>Dr. Brie Everard, PsyD, LP</h2>
+              <p class="title">Psychologist</p>
+              <p>
+                My style is influenced by the work of Brené Brown, who writes, "We are all made of strength and struggle."I will encourage you to acknowledge and build on your strengths and support you through your struggles. I ampassionate about helping people move towards self-acceptance and away from shame and self-doubt. I strive tobe authentic, compassionate, and respectful, and to foster a relationship where you feel genuinely seen,heard, and understood.
+                I work well with adolescents and adults who are grappling with depression; anxiety; transitions; lowself-esteem; relational and attachment concerns; trauma; grief and loss; and identity shifts.
+                I strongly believe in the healing power of play and creativity, and infuse my work with humor, spontaneity, and imagination. I am trained in many styles of therapy, from expressive arts to clinical, "evidence-based" styles like CBT. We will work together to find the most effective approach for you.
+              </p>
+              <p>email@email.com</p>
+              <p><a href="./contact.html"><button class="button">Contact</button></a></p>
+          </div>
+      </div>
+  </div>
+      
+      <div class="column">
+        <div style="border-radius: 30px;" class="card">
+          <img src="../images/ashaPic.png" alt="Asha Madsen-Humeniuk" style="width:100%; box-shadow: 0px 0px 50px 0px rgba(15, 15, 15, 0.8);">
+          <div class="container">
+              <h2>Dr. Asha Madsen-Humeniuk, PsyD, LP</h2>
+              <p class="title">Psychologist</p>
+              <p>I am a Washington stated licensed psychologist (license number: PY61058287), telehealth provider inFlorida,   and PsyPact member who works with children, adolescents, adults, couples, and families. I adapt mytherapy to     each individual and utilize several therapeutic approaches including: person-centered,cognitive-behavioral     therapy (CBT), trauma-focused cognitive behavioral therapy (TF-CBT), parent-childinteraction therapy (PCIT),   strength-based, family systems, emotion focused therapy (EFT), and EMDR.
+              </p>
+              <p>
+                  Life can get difficult, and sometimes a little help from a professional can make things better. I careabout your well-being and want to provide you all the tools you need to explore, process, and share in anon-judgmental, respectful, and safe environment.
+              </p>
+            <p>email@email.com</p>
+            <p><a href="./contact.html"><button class="button">Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div style="border-radius: 30px;" class="card">
+          <img src="../images/nicholasPic.png" alt="Nicholas Humeniuk-Sandberg" style="width:100%; box-shadow: 0px 0px 50px 0px rgba(15, 15, 15, 0.8);">
+          <div class="container">
+            <h2>Only Nick Humeniuk-Sandberg</h2>
+            <p class="title">Software Engineer</p>
+            <p>"There once was a man from Peru, who dreamed of eating his shoe. He woke with a fright, in the middle of the night, to see if his dream had come true." <br>~ Gary The Snail</p>
+            <p>
+              "You're braver than you believe, stronger than you seem and smarter than you think." <br>~ Christopher Robin
+            </p>
+            <p>
+              “Sometimes the smallest things take up the most room in your heart.” <br>~ Winnie the Pooh
+            </p>
+            <p>
+              “If the person you are talking to doesn't appear to be listening, be patient. It may simply be that he has a small piece of fluff in his ear.” <br> ~ Winnie the Pooh
+            </p>
+            <p>email@email.com</p>
+            <p><a href="./contact.html"><button class="button">Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="aboutGifContainer">
+    <a href="https://www.thenorthface.com/en-us" target="_blank"><img class="gif1" src="../images/THUMBNAIL.gif" alt="GIF 2"></a>
+  </div>
+  <!-- Section Ends -->
+
+  <!-- waves -->
+  <div class="waveContainer">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
+  <!-- waves end -->
+    <!-- Footer Starts -->
+    <footer>
+      <!-- TODO: If have time add social links -->
+      <!-- <ul class="social-icons">
+          <li><a href="#"><i class="facebook"></i></a></li>
+          <li><a href="#"><i class="twitter"></i></a></li>
+          <li><a href="#"><i class="instagram"></i></a></li>
+      </ul> -->
+      <p>&copy; 2024 AMH Therapeutic Services, LLC. All rights reserved.</p>
+  </footer>
+    <!-- Footer Ends -->
+    
+</body>
+</html>

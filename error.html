@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - How are you?</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png" />
+    <style>
+      button{
+        box-shadow: 0px 0px 10px 0px rgba(15, 15, 15, 0.8);
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+      }
+
+      .tableErrorContainer {
+        display: flex;
+        flex-direction: column;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .table-overlay {
+        position: relative;
+        z-index: 1;
+        overflow-x: auto;
+    }
+
+    .text-content {
+      padding: 20px;
+      color: white;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+     }
+
+    .box {
+      position: relative;
+      width: 1000px;
+      height: 1000px;
+      animation: bounce 2s infinite alternate;
+    }
+
+    .cover_pan {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('https://i.postimg.cc/j2PcZK27/superman-04.png');
+      background-size: cover;
+      opacity: 0.8;
+    }
+
+    .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color: #ffffff;
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-20px);
+      }
+    }
+
+    </style>
+</head>
+<body class ="aboutBody">
+    <!-- TODO maybe have navbar inside of header -->
+    <!-- TODO if have time: Nav Bar that moves from top for desktop to side hamburger menu for mobile -->
+  <!-- Maybe add in a logo into navBar if have time -->
+ <!-- <a class ="webLogo" href="index.html"><img src="../images/riverLogo.png" alt="Website Logo"></a> -->
+
+ <!-- Nav Bar Starts -->
+
+  <div class ="navBar">
+    <a href="./index.html">Home</a>
+    <a href ="./about.html">About</a>
+    <a href ="./contact.html">Contact</a>
+    <div class ="login-container">
+      <form action ="./error.html">
+        <input type ="text" placeholder="Username" name="username">
+        <input type ="text" placeholder="Password" name="password">
+        <button type ="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <!-- Nav Bar Ends -->
+  <!-- Alert Message just for fun -->
+  <div class="alertBox">
+    <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
+    RESTRICTED ACCESS ADMIN USER ONLY. YOU HACKER, YOU.
+  </div>
+  <!-- Header Starts -->
+
+  <div class="contact-section">
+    <h1>ERROR 404</h1>
+    <p style="font-size: large;">HOW ON EARTH DID YOU GET HERE?</p>
+</div>
+  <section>
+    <div>
+        <p style="color: whitesmoke;">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum unde at, officia vitae enim earum nobis molestiae fugiat rem excepturi ad dolores dolorum ullam dicta nam ipsa voluptatibus repellat accusamus sit incidunt distinctio quam tempora deleniti! Suscipit, ratione voluptatibus perferendis dolor voluptate eligendi. Ad sint rerum reprehenderit rem, blanditiis error pariatur nisi nesciunt aut veritatis ut, laborum labore totam repellendus saepe corporis soluta possimus? Perferendis esse, modi autem consequuntur iure fuga dolor ipsa sequi libero ipsum quisquam quod iusto aut fugit quia accusantium molestias magni, beatae omnis ratione atque porro! Doloribus repellat repudiandae omnis, aut impedit pariatur necessitatibus! Dolor magnam alias voluptates, explicabo ab ut atque, accusamus asperiores impedit a accusantium. Quasi dolor nobis ipsam doloremque sunt cumque repellendus ducimus iusto laborum, placeat quidem fugiat ut consectetur sapiente quam, voluptas, aliquam illum! Excepturi id temporibus obcaecati laudantium maiores ducimus corporis sit voluptatem! Dolores voluptatem harum nisi temporibus cupiditate quis illum, ipsum provident similique sit placeat voluptas iure, blanditiis tenetur alias asperiores nostrum deleniti neque maiores saepe soluta quisquam laborum. Ad aspernatur ex delectus maiores eligendi rem, eius eum cupiditate esse id aut? Animi eveniet nisi, culpa quis blanditiis dolor distinctio excepturi harum dolores saepe beatae pariatur ad dicta odio accusantium maxime quas nulla aut impedit! Aliquam quis veniam eum. Quasi, odio amet repellendus maxime quisquam est, magnam velit sit quibusdam, repellat minima veniam nobis sed rerum. Animi magnam, explicabo cumque dolorum quis perferendis adipisci facere asperiores accusamus praesentium neque aliquam ipsam expedita incidunt? Error placeat dicta distinctio qui est quis.
+            <p style="color: whitesmoke;">Translates from Latin to English with: Hey how are you?</p>
+        </p>
+    </div>
+<!-- An error animation -->
+    <body>
+      <div class="main">
+          <div class="box">
+              <div class="cover_pan"></div>
+              <div class="text">Oops... looks like you got lost!</div>
+          </div>
+      </div>
+
+    <!-- Table starts -->
+    <div class="tableErrorContainer">
+      <div class="table-overlay">
+        <table>
+          <tr>
+            <th>Error Code</th>
+            <th>Description</th>
+            <th>404</th>
+            <th>500</th>
+          </tr>
+          <tr>
+            <td>%$#^$&@</td>
+            <td>4ERROR2</td>
+            <td>Page Not Found</td>
+            <td>Interneal Server Error</td>
+          </tr>
+          <tr>
+            <td>Reroute</td>
+            <td>Potential</td>
+            <td>DDOS ATTACK</td>
+            <td>WHO DONE IT</td>
+          </tr>
+          <tr>
+            <td>Where do we</td>
+            <td>go from</td>
+            <td>here? ERROR 9000</td>
+            <td>Its over 9000</td>
+          </tr>
+        </table>
+      </div>
+  </section>
+      
+  <!-- Section ends -->
+
+  <!-- waves -->
+  <div class="waveContainer">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
+  <!-- waves end -->
+    <!-- Footer Starts -->
+    <footer>
+      <!-- TODO: If have time add social links -->
+      <!-- <ul class="social-icons">
+          <li><a href="#"><i class="facebook"></i></a></li>
+          <li><a href="#"><i class="twitter"></i></a></li>
+          <li><a href="#"><i class="instagram"></i></a></li>
+      </ul> -->
+      <p>&copy; 2024 AMH Therapeutic Services, LLC. All rights reserved.</p>
+  </footer>
+    <!-- Footer Ends -->
+    
+</body>
+</html>

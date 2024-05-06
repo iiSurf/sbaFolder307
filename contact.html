@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - How are you?</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png" />
+    <style>
+      button{
+        box-shadow: 0px 0px 10px 0px rgba(15, 15, 15, 0.8);
+      }
+      /* Parent GIF container */
+      .gifContainer {
+            position: relative;
+        }
+        .gifContact {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 2;
+        }
+        .container {
+            display: flex;
+        }
+
+        .left-side {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 20px;
+        }
+        #skyscraper{
+          box-shadow: 0px 0px 50px 0px rgba(15, 15, 15, 0.4);
+        }
+    </style>
+</head>
+<body class ="aboutBody">
+    <!-- TODO maybe have navbar inside of header -->
+    <!-- TODO if have time: Nav Bar that moves from top for desktop to side hamburger menu for mobile -->
+  <!-- Maybe add in a logo into navBar if have time -->
+ <!-- <a class ="webLogo" href="index.html"><img src="../images/riverLogo.png" alt="Website Logo"></a> -->
+
+ <!-- Nav Bar Starts -->
+
+  <div class ="navBar">
+    <a href="./index.html">Home</a>
+    <a href ="./about.html">About</a>
+    <a class ="active" href ="./contact.html">Contact</a>
+    <div class ="login-container">
+      <form action ="./error.html">
+        <input type ="text" placeholder="Username" name="username">
+        <input type ="text" placeholder="Password" name="password">
+        <button type ="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  <!-- Nav Bar Ends -->
+  <!-- Alert Message just for fun -->
+  <div class="alertBox">
+    <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
+    Not as important message, but could be important. Banner is still red so could be important... IT'S IMPORTANT!
+  </div>
+  <!-- Header Starts -->
+
+  <div class="contact-section">
+      <h1>Contact Us</h1>
+      <p>Don't be shy. Here are some tips:</p>
+        <p>Briefly explain who you are, and what brings you here?</p>
+        <p>What do you want (i.e. an initial consult or a question about fees or insurance)?</p>
+        <p>When are you available, and how best to reach you (phone, text or email)?</p>
+      <p></p>
+  </div>
+
+  <!-- Header Ends -->
+
+  <!-- Section Starts -->
+  <section id="mainContainer">
+
+    <div class="contact-container">
+    <div class="container">
+    <div class="left-side">
+        <a href="https://www.thenorthface.com/en-us" target="_blank"><img class="gif1" src="../images/SKYSCRAPER.gif" alt="GIF 1"></a>
+    </div>
+    <div class="right-side">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your First Here">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your Last Name Here">
+    
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="Argentina">Argentina</option>
+          <option value="china">China</option>
+          <option value="cameroon">Cameroon</option>
+          <option value="canada">Canada</option>
+          <option value="india">India</option>
+          <option value="michigan">Michigan</option>
+          <option value="russia">Russia</option>
+          <option value="usa">United States of America</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder=
+        "
+                      (o_
+   c_     c_    c_  \\\_\
+ \\)    \\)   \\)   <____)
+        " style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+</div>
+  <!-- TODO -->
+    </div>
+  </section>
+      
+  <!-- Section ends -->
+
+  <!-- waves -->
+  <div class="waveContainer">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
+  <!-- waves end -->
+    <!-- Footer Starts -->
+    <footer>
+      <!-- TODO: If have time add social links -->
+      <!-- <ul class="social-icons">
+          <li><a href="#"><i class="facebook"></i></a></li>
+          <li><a href="#"><i class="twitter"></i></a></li>
+          <li><a href="#"><i class="instagram"></i></a></li>
+      </ul> -->
+      <p>&copy; 2024 AMH Therapeutic Services, LLC. All rights reserved.</p>
+  </footer>
+    <!-- Footer Ends -->
+    
+</body>
+</html>

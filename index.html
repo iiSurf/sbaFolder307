@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Welcome</title>
+    <link rel="stylesheet" href="../styles/style.css"/>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png" />
+    <style>
+  button{
+    box-shadow: 0px 0px 10px 0px rgba(15, 15, 15, 0.8);
+  }
+  .indexGifContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    }
+
+  .hero-image {
+    position: relative;
+    height: 100vh;
+    background-image: url("../images/seaCity.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gif-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 20%;
+    background-size: cover;
+    opacity: 0.7;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-text button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.buttonIndex {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .hero-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+
+  .hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gif-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+  }
+  .indexFooter {
+    background: linear-gradient(to top, #0b132b, #3a506b);
+    color: white;
+    padding: 60px;
+    text-align: center;
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px 0px rgba(15, 15, 15, 0.8);
+    margin-top: auto;
+  }
+  
+    </style>
+</head>
+<body class ="indexBody">
+    <!-- TODO maybe have navbar inside of header -->
+    <!-- TODO if have time: Nav Bar that moves from top for desktop to side hamburger menu for mobile -->
+  <!-- Maybe add in a logo into navBar if have time -->
+ <!-- <a class ="webLogo" href="index.html"><img src="../images/riverLogo.png" alt="Website Logo"></a> -->
+ <!-- Nav Bar Starts -->
+
+  <div class ="navBar">
+    <a class ="active" href="./index.html">Home</a>
+    <a href ="./about.html">About</a>
+    <a href ="./contact.html">Contact</a>
+    <div class ="login-container">
+      <form action ="./error.html">
+        <input type ="text" placeholder="Username" name="username">
+        <input type ="text" placeholder="Password" name="password">
+        <button type ="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Nav Bar Ends -->
+  <!-- Alert Message just for fun -->
+  <div class="alertBox">
+    <span class="closebutton" onclick="this.parentElement.style.display='none';">&times;</span>
+    ------- THIS x WILL SELF DESTRUCT
+  </div>
+  <!-- Header Starts -->
+
+ 
+
+  <!-- Header Ends -->
+
+  <!-- Section Starts -->
+  <section>
+    <div class="hero-image">
+      <img src="../images/seaCity.jpg" alt="Hero Image">
+      <div class="gif-overlay"><a href="https://example.com">
+        <img src="../images/LEADERBOARD.gif" alt="Click me!" />
+      </a>
+      </div>
+      <div class="overlay"></div>
+      <div class="gif-overlay"></div>
+      <div class="hero-text">
+          <h1>AMH Therapeutic Services</h1>
+          <p style="font-weight: bold;">Go on, I'm listening</p>
+          <a href="./contact.html"><button class="buttonIndex">Contact</button></a>
+      </div>
+  </div>
+  </section>
+
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Points</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>Adam</td>
+      <td>Johnson</td>
+      <td>67</td>
+    </tr>
+  </table>
+  <!-- Section Ends -->
+
+  <!-- waves -->
+  <div class="waveContainer">
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+    <div class="wave wave4"></div>
+  </div>
+  <!-- waves end -->
+    <!-- Footer Starts -->
+    <footer class="indexFooter">
+      <!-- TODO: If have time add social links -->
+      <!-- <ul class="social-icons">
+          <li><a href="#"><i class="facebook"></i></a></li>
+          <li><a href="#"><i class="twitter"></i></a></li>
+          <li><a href="#"><i class="instagram"></i></a></li>
+      </ul> -->
+      <p>&copy; 2024 AMH Therapeutic Services, LLC. All rights reserved.</p>
+  </footer>
+    <!-- Footer Ends -->
+    
+</body>
+</html>
